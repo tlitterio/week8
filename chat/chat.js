@@ -35,10 +35,14 @@ firebase.auth().onAuthStateChanged(async function(user) {
 
     // 🔥 Step 4 begins here
     // get a reference to the "submit message" button
+    let submitMessage = document.querySelector(`#submit-message`)
+    submitMessage.addEventListener(`click`,function(event){
 
     // handle the "submit message" button being clicked
 
       // ignore the default form submit behavior
+      event.preventDefault()
+    })
 
       // get a reference to the "message" input box
 
@@ -56,7 +60,7 @@ firebase.auth().onAuthStateChanged(async function(user) {
       // Fetch the url, wait for a response, store the response in memory
 
       // Ask for the json-formatted data from the response, wait for the data, store it in memory
-
+      console.log(json)
       // Grab a reference to the element with class name "messages" in memory
 
       // Clear anything already in the "messages" element
