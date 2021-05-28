@@ -29,7 +29,7 @@
 
   <!-- TODO: Add SDKs for Firebase products that you want to use
       https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script> -->
   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
 
   <!-- FirebaseUI Auth -->
@@ -38,7 +38,14 @@
 
   <script>
     // Your web app's Firebase configuration
-    var firebaseConfig = {} // replace
+    var firebaseConfig = {
+  apiKey: "AIzaSyDQdL2rWlaO9EZ9kaMXNdeGWppMDFxJh1U",
+  authDomain: "week8-d6d56.firebaseapp.com",
+  projectId: "week8-d6d56",
+  storageBucket: "week8-d6d56.appspot.com",
+  messagingSenderId: "683787025379",
+  appId: "1:683787025379:web:df93b439da9d50dbddfed6"
+} // replace
     
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
